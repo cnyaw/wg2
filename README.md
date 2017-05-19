@@ -1,5 +1,8 @@
 # 鋤草機
 
+Created by Good Game Editor https://good-ed.blogspot.com <br/>
+Android download https://play.google.com/store/apps/details?id=weilican.weeder2
+
 一筆劃到底的益智小品。
 
 * 遊戲共提供12張有趣的關卡等你來挑戰。
