@@ -10,3 +10,5 @@ Android download https://play.google.com/store/apps/details?id=weilican.weeder2
 * 在首頁點擊鋤草機可以開關加速模式。
 
 ![image](wg2.png)
+
+完全攻略 https://www.youtube.com/watch?v=P-sSHRYqqg4
