@@ -467,6 +467,7 @@ objects=15 23 25 27 30 31 75
 texture=1
 x=128
 y=48
+dim=0 0 396 133
 
 [object23]
 sprite=6
@@ -482,6 +483,7 @@ y=209
 texture=26
 x=265
 y=288
+dim=0 0 116 29
 
 [object30]
 sprite=28
@@ -498,6 +500,7 @@ texture=74
 visible=0
 x=339
 y=215
+dim=0 0 24 24
 
 [level42]
 name=Stage
@@ -508,61 +511,73 @@ objects=60 61 62 63 64 65 66 67 68 69 70 71
 texture=43
 x=64
 y=48
+dim=0 0 54 54
 
 [object61]
 texture=44
 x=208
 y=48
+dim=0 0 54 54
 
 [object62]
 texture=45
 x=352
 y=48
+dim=0 0 63 63
 
 [object63]
 texture=46
 x=512
 y=48
+dim=0 0 63 63
 
 [object64]
 texture=47
 x=48
 y=160
+dim=0 0 72 72
 
 [object65]
 texture=48
 x=208
 y=160
+dim=0 0 72 72
 
 [object66]
 texture=49
 x=352
 y=160
+dim=0 0 81 81
 
 [object67]
 texture=50
 x=496
 y=160
+dim=0 0 81 81
 
 [object68]
 texture=51
 x=48
 y=272
+dim=0 0 90 99
 
 [object69]
 texture=52
 x=192
 y=272
+dim=0 0 117 90
 
 [object70]
 texture=57
 x=336
 y=272
+dim=0 0 108 90
 
 [object71]
 texture=59
 x=480
 y=272
+dim=0 0 108 90
 
 [level14]
 name=level_1
