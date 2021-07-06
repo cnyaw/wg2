@@ -32,6 +32,7 @@ local BW,BH = 52, 52
 local btnleft, btnright, btnup, btndown
 local btnLeftDown, btnRightDown, btnUpDown, btnDownDown = false, false, false, false
 local EdgeObj
+local ExitObj
 
 -- Weeder's HEAD
 Head = {}
@@ -332,7 +333,7 @@ end
 Level.OnCreate = function(param)
   local id = param._id
 
- InitLevel(param)
+  InitLevel(param)
 
   local head = Good.FindChild(id, 'head')
   Good.SetPos(head, 0, 0)
@@ -358,12 +359,15 @@ Level.OnCreate = function(param)
   end
 
   SetBkg(param._id)
+  ExitObj = Good.GenObj(-1, 32)
+  Good.SetPos(ExitObj, 608, 0)
 end
 
 Level.OnStep = function(param)
   if (gameover) then
     if (Input.IsKeyPressed(Input.RETURN + Input.BTN_A + Input.LBUTTON)) then
       Good.GenObj(-1, level)
+      return
     end
   end
 
@@ -372,12 +376,21 @@ Level.OnStep = function(param)
       level = Resource.GetNextLevelId(level)
       if (0 < level) then
         Good.GenObj(-1, level)
+        return
       end
     end
   end
 
+  if (Input.IsKeyPressed(Input.LBUTTON)) then
+    local x,y = Input.GetMousePos()
+    if (PtInObj(x, y, ExitObj)) then
+      Good.GenObj(-1, 42)                -- Back to stage.
+      return
+    end
+  end
+
   if (Input.IsKeyPressed(Input.ESCAPE)) then
-    Good.GenObj(-1, 3)                  -- Back to title.
+    Good.GenObj(-1, 42)                  -- Back to stage.
   end
 end
 

@@ -3,7 +3,7 @@ version=0.3
 name=Weeder
 window=640 400
 snds=79
-texs=2 1 26 24 43 44 45 46 47 48 49 50 51 52 57 59 73 74 76 77 78 41
+texs=2 1 26 24 43 44 45 46 47 48 49 50 51 52 57 59 73 74 76 77 78 41 32
 maps=16 35 55 89 124 170 212 269 336 411 493 558
 sprites=4 5 6 7 8 9 10 11 12 13 84 85 86 87 118 121 122 169 495 634 28 29
 levels=3 42 14 36 56 90 125 171 213 270 337 412 496 559
@@ -85,6 +85,10 @@ fileName=./res/pass.png
 [tex41]
 name=red
 fileName=./res/red.png
+
+[tex32]
+name=cross
+fileName=./res/cross.png
 
 [map16]
 name=map_1
@@ -505,7 +509,7 @@ dim=0 0 24 24
 [level42]
 name=Stage
 script=SelStage
-objects=60 61 62 63 64 65 66 67 68 69 70 71
+objects=60 61 62 63 64 65 66 67 68 69 70 71 37
 
 [object60]
 texture=43
@@ -578,6 +582,11 @@ texture=59
 x=480
 y=272
 dim=0 0 108 90
+
+[object37]
+texture=32
+x=608
+dim=0 0 32 32
 
 [level14]
 name=level_1

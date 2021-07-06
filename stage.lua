@@ -35,6 +35,10 @@ end
 SelStage.OnStep = function(param)
   if (Input.IsKeyPressed(Input.LBUTTON)) then
     local x,y = Input.GetMousePos()
+    if (PtInObj(x, y, 37)) then
+      Good.GenObj(-1, 3)                  -- Back to title.
+      return
+    end
     local W,H = Good.GetWindowSize()
     local col = math.floor(x / (W/4))
     local row = math.floor(y / (H/3))
