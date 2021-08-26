@@ -25,9 +25,9 @@ Title.OnCreate = function(param)
     end
   end
   if (1 == MoveSpeed) then
-    Good.SetVisible(75, 0)
+    Good.SetVisible(75, Good.INVISIBLE)
   else
-    Good.SetVisible(75, 1)
+    Good.SetVisible(75, Good.VISIBLE)
   end
   SetBkg(param._id)
 end
@@ -40,10 +40,10 @@ Title.OnStep = function(param)
     if (23 == o or 25 == o) then
       if (1 == MoveSpeed) then
         MoveSpeed = 2
-        Good.SetVisible(75, 1)
+        Good.SetVisible(75, Good.VISIBLE)
       else
         MoveSpeed = 1
-        Good.SetVisible(75, 0)
+        Good.SetVisible(75, Good.INVISIBLE)
       end
       local outf = io.open("wg2b.sav", "w")
       outf:write(MoveSpeed)
