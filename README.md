@@ -2,7 +2,7 @@
 
 Created by Good Game Editor https://good-ed.blogspot.com <br/>
 Android download https://play.google.com/store/apps/details?id=weilican.weeder2 <br/>
-Play https://agile-hollows-18660.herokuapp.com/game/good/?pkg=wg.zip
+Play https://smallworld.idv.tw/game/good/play.html?pkg=wg.zip
 
 一筆劃到底的益智小品。
 
